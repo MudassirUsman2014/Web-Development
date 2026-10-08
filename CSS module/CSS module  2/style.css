@@ -1,0 +1,233 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 18px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+
+/* Banner Styling */
+.banner {
+  height: 85vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ee5253;
+}
+
+/* About Us Section Styling */
+.about-section {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  color: #222;
+  margin-bottom: 20px;
+  border-left: 5px solid #ff6b6b;
+  padding-left: 15px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stat-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-box h3 {
+  font-size: 28px;
+  color: #ff6b6b;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 80px 40px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.category-title {
+  font-size: 28px;
+  color: #ff6b6b;
+  margin: 40px 0 20px 0;
+  text-align: left;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid #ff6b6b;
+  padding-bottom: 8px;
+}
+
+/* Grid Layout for Menu Cards */
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Large Menu Cards */
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  width: 300px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+}
+
+.menu-card h4 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.menu-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.menu-card .price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+/* Helper Class to Hide Elements */
+.hidden {
+  display: none;
+}

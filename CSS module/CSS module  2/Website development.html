@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Susan's Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Susan's Kitchen</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#menu-section">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner" id="home">
+    <div class="banner-content">
+      <h1>Welcome to Susan's Kitchen</h1>
+      <p>Delicious food made with fresh ingredients</p>
+      <button class="btn" id="view-menu-btn" onclick="toggleMenu()">View Full Menu</button>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-section" id="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Susan's Kitchen</h2>
+        <p>Founded in 2015, Susan's Kitchen started with a simple passion: serving homemade, delicious meals prepared with farm-fresh ingredients. What began as a small family recipe book has grown into a beloved dining destination for our local community.</p>
+        <p>Our head chef, Susan, believes that great food brings people together. From hand-crafted pasta to locally sourced produce, every dish on our menu is prepared with care, love, and a touch of culinary tradition.</p>
+        
+        <div class="about-stats">
+          <div class="stat-box">
+            <h3>10+</h3>
+            <p>Years of Service</p>
+          </div>
+          <div class="stat-box">
+            <h3>100%</h3>
+            <p>Fresh Ingredients</p>
+          </div>
+          <div class="stat-box">
+            <h3>50k+</h3>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Susan's Kitchen Interior">
+      </div>
+    </div>
+  </section>
+
+  <!-- Hidden Menu Section -->
+  <section class="menu-section hidden" id="menu-section">
+    <h2>Our Full Menu</h2>
+
+    <!-- Main Dishes Category -->
+    <h3 class="category-title">Main Courses</h3>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <h4>Margherita Pizza</h4>
+        <p>Fresh red tomatoes, rich mozzarella, and aromatic fresh basil leaves baked to perfection.</p>
+        <span class="price">$12.99</span>
+      </div>
+      <div class="menu-card">
+        <h4>Classic Burger</h4>
+        <p>Juicy grilled beef patty topped with crisp lettuce, cheddar cheese, and house special sauce.</p>
+        <span class="price">$10.99</span>
+      </div>
+      <div class="menu-card">
+        <h4>Pasta Carbonara</h4>
+        <p>Silky cream sauce with smoked bacon bits, garlic, and aged parmesan cheese over fettuccine.</p>
+        <span class="price">$14.50</span>
+      </div>
+      <div class="menu-card">
+        <h4>Grilled Salmon</h4>
+        <p>Wild-caught salmon fillet grilled with lemon butter sauce, served with roasted asparagus.</p>
+        <span class="price">$18.99</span>
+      </div>
+    </div>
+
+    <!-- Starters & Desserts Category -->
+    <h3 class="category-title">Appetizers & Desserts</h3>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <h4>Caesar Salad</h4>
+        <p>Crisp romaine hearts tossed in garlic dressing, sourdough croutons, and shaved parmesan.</p>
+        <span class="price">$8.99</span>
+      </div>
+      <div class="menu-card">
+        <h4>Garlic Breadsticks</h4>
+        <p>Warm, oven-baked breadsticks brushed with garlic butter and fresh parsley.</p>
+        <span class="price">$6.50</span>
+      </div>
+      <div class="menu-card">
+        <h4>Chocolate Fudge Cake</h4>
+        <p>Rich, moist chocolate cake layered with fudge frosting and served with vanilla ice cream.</p>
+        <span class="price">$7.99</span>
+      </div>
+      <div class="menu-card">
+        <h4>Fresh Lemonade</h4>
+        <p>Hand-squeezed lemons infused with mint leaves and served ice-cold.</p>
+        <span class="price">$4.50</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const menuSection = document.getElementById('menu-section');
+      menuSection.classList.toggle('hidden');
+      if (!menuSection.classList.contains('hidden')) {
+        menuSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>
